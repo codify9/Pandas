@@ -42,7 +42,9 @@ df = pd.read_csv('pokemon_data.csv')
 # print(No_mega)
 
 # Print all pokemon name starts with Pi.
+
 import re
 
-pi = df.loc[df['Name'].str.contains('^pi[a-z]*', flags=re.I, regex=True)]
-print(pi)
+# pi = df.loc[df['Name'].str.contains('^pi[a-z]*', flags=re.I, regex=True)]
+# print(pi)
+
