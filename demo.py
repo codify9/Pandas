@@ -24,10 +24,13 @@ df = pd.read_csv('pokemon_data.csv')
 
 # Adding a new coloumn 
 
-df['Total'] = df.iloc[:, 4:10].sum(axis = 1)
+# df['Total'] = df.iloc[:, 4:10].sum(axis = 1)
 
-cols = list(df.columns.values)
-df = df[cols[0:10] + [cols[-1]] + cols[10:]]
+# cols = list(df.columns.values)
+# df = df[cols[0:10] + [cols[-1]] + cols[10:]]
 
-print(df)
+# print(df)
 
+# Saving and extracting the Data.
+
+df.to_csv('New_pokemon_data.csv')
