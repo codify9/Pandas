@@ -36,3 +36,13 @@ df = pd.read_csv('pokemon_data.csv')
 # df.to_csv('New_pokemon_data.csv')
 
 
+# Print all pokemon which are not mega
+
+# No_mega = df.loc[~df['Name'].str.contains('Mega')]
+# print(No_mega)
+
+# Print all pokemon name starts with Pi.
+import re
+
+pi = df.loc[df['Name'].str.contains('^pi[a-z]*', flags=re.I, regex=True)]
+print(pi)
