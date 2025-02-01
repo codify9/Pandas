@@ -33,4 +33,6 @@ df = pd.read_csv('pokemon_data.csv')
 
 # Saving and extracting the Data.
 
-df.to_csv('New_pokemon_data.csv')
+# df.to_csv('New_pokemon_data.csv')
+
+
